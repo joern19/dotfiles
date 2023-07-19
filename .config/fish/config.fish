@@ -1,18 +1,24 @@
 # Start X at login
-
 if status is-login
   if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-    exec startx -- -keeptty
+#    exec startx -- -keeptty
+    set -x SDL_VIDEODRIVER wayland
+    set -x _JAVA_AWT_WM_NONREPARENTING 1
+    set -x QT_QPA_PLATFORM wayland
+    set -x XDG_CURRENT_DESKTOP sway
+    set -x XDG_SESSION_DESKTOP sway
+    exec sway
   end
 end
 
 set fish_greeting
 fish_vi_key_bindings
 
+source ~/backup/passwords/env.sh
+
 alias cp "cp -i"
 alias sudo "doas"
 alias ledsOff "sudo sh -c 'ls /sys/class/leds/input*::*/brightness | xargs -I % sh -c \"echo 0 > %\"'"
-alias tetrio "/home/not-a-robot/Downloads/tetrio/opt/TETR.IO/tetrio-desktop"
 
 bind \cr "commandline (history | fzf; or echo '')"
 

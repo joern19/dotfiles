@@ -15,6 +15,7 @@ set fish_greeting
 fish_vi_key_bindings
 
 source ~/backup/passwords/env.sh
+set -Ux PASSWORD_STORE_DIR $HOME/backup/passwords/.password-store
 
 alias cp "cp -i"
 alias sudo "doas"

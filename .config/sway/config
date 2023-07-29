@@ -37,10 +37,11 @@ bindsym XF86Favorites exec flameshot gui
 bindsym $mod+s exec rm -f /tmp/screenshot.png && grim -g "$(slurp)" /tmp/screenshot.png && wl-copy < /tmp/screenshot.png
 # maybe pipe the output into swappy..
 
-#bindsym $mod+p exec alacritty --class 'phrases' --command bash -c "cat ~/.config/sway/emoji.txt | fzf --tiebreak begin | cut -d: -f2- | sed -r 's/.//; s/\\\\n/\\n/g' | wl-copy -n"
-bindsym $mod+p exec alacritty --class 'phrases' --command bash -c "cat ~/.config/sway/emoji.txt | fzf --tiebreak begin | cut -d: -f2- | sed -r 's/.//; s/\\\\\\\\n/\\\\n/g' | wl-copy -n"
-for_window [app_id="^phrases$"] floating enable, border pixel 5, resize set width 25 ppt height 20 ppt
+bindsym $mod+e exec alacritty --class 'emojis' --command bash -c "cat ~/.config/sway/emoji.txt | fzf --tiebreak begin | cut -d: -f2- | sed -r 's/.//; s/\\\\\\\\n/\\\\n/g' | wl-copy -n"
+for_window [app_id="^emojis$"] floating enable, border pixel 5, resize set width 25 ppt height 20 ppt
 
+bindsym $mod+p exec alacritty --class 'passwords' --command fish -c "cd \$PASSWORD_STORE_DIR && set A (find . -type f -name '*.gpg' | string sub -s 3 -e -4 | fzf) && pass -c \$A"
+for_window [app_id="^passwords$"] floating enable, border pixel 5, resize set width 25 ppt height 20 ppt
 
 # gaps
 gaps inner 2
@@ -112,8 +113,8 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -340,5 +341,5 @@ output "LG Electronics W2242 0x00006E2A" bg /usr/share/backgrounds/joern/wallPap
 
 #exec firefox
 #exec code
-exec --no-startup-id fcitx -d
+#exec --no-startup-id fcitx -d
 # exec discord

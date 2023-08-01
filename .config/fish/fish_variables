@@ -2,8 +2,7 @@
 # VERSION: 3.0
 SETUVAR EDITOR:/usr/bin/nvim
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_cbi:xclip\x20\x2dsel\x20clip
-SETUVAR _fish_abbr_cbo:xclip\x20\x2do\x20\x2dsel\x20clip
+SETUVAR _fish_abbr_fcd:cd\x20\x28find\x20\x2e\x20\x2dtype\x20d\x20\x7c\x20fzf\x29
 SETUVAR _fish_abbr_pdf:zathura
 SETUVAR _fish_abbr_sl:ls\x20\x2dlah
 SETUVAR _fish_abbr_vim:nvim

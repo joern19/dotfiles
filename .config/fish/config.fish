@@ -15,9 +15,10 @@ set fish_greeting
 fish_vi_key_bindings
 
 source ~/backup/passwords/env.sh
-set -Ux PASSWORD_STORE_DIR $HOME/backup/passwords/.password-store
+set -x PASSWORD_STORE_DIR $HOME/backup/passwords/.password-store
 
 alias cp "cp -i"
+alias woman "man"
 alias sudo "doas"
 alias ledsOff "sudo sh -c 'ls /sys/class/leds/input*::*/brightness | xargs -I % sh -c \"echo 0 > %\"'"
 
@@ -55,4 +56,3 @@ function extract
     echo "'$argv' is not a valid file"
   end
 end
-

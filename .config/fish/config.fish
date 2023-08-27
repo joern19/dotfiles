@@ -7,7 +7,7 @@ if status is-login
     set -x QT_QPA_PLATFORM wayland
     set -x XDG_CURRENT_DESKTOP sway
     set -x XDG_SESSION_DESKTOP sway
-    exec sway
+    exec sway || bash
   end
 end
 
@@ -15,7 +15,6 @@ set fish_greeting
 fish_vi_key_bindings
 
 source ~/backup/passwords/env.sh
-set -x PASSWORD_STORE_DIR $HOME/backup/passwords/.password-store
 
 alias cp "cp -i"
 alias woman "man"

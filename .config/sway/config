@@ -2,7 +2,6 @@
 include /etc/sway/config.d/*
 
 input "type:keyboard" {
-  xkb_layout de
   xkb_variant nodeadkeys
   xkb_options ctrl:nocaps
   xkb_numlock enabled
@@ -106,7 +105,7 @@ for_window [app_id="^launcher$"] floating enable, border pixel 5, resize set wid
     bindsym $mod+Shift+c reload
 
 
-    bindsym $mod+Shift+e exec "swaynag -t warning -m 'Do you really want to shutdown the PC?' -B 'Yes shutdown' 'systemctl poweroff -i'"
+    bindsym $mod+Shift+e exec "swaynag -t warning -m 'Do you really want to shutdown the PC?' -B 'Yes shutdown' 'systemctl poweroff -i' -B 'firmware-setup' 'systemctl reboot --firmware-setup'"
     bindsym $mod+Shift+s exec "systemctl suspend"
 
 for_window [title="^(Android Emulator).*"] floating enable

@@ -1,13 +1,12 @@
 # Start X at login
 if status is-login
   if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-#    exec startx -- -keeptty
     set -x SDL_VIDEODRIVER wayland
     set -x _JAVA_AWT_WM_NONREPARENTING 1
     set -x QT_QPA_PLATFORM wayland
     set -x XDG_CURRENT_DESKTOP sway
     set -x XDG_SESSION_DESKTOP sway
-    exec sway || bash
+    exec sway &>> /tmp/sway.log || bash
   end
 end
 
@@ -55,3 +54,4 @@ function extract
     echo "'$argv' is not a valid file"
   end
 end
+

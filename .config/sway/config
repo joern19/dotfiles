@@ -368,17 +368,19 @@ bar {
 
 output * bg /usr/share/backgrounds/joern/wallPaperRight.png fill
 
+## Internal
+output eDP-1 pos 0 0 mode "1920x1080@60Hz"
+
 # Home PC
 # Center
 output 'Samsung Electric Company S24F350 H4ZK601999' bg /usr/share/backgrounds/joern/wallPaperLeft.png fill pos 0 0 res 1920x1080@60Hz
 # Right
 output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 1920 0 res 1680x1050@60Hz
 
-# Hannover (TODO: use names instead of outputs)
-output DP-1 pos 0 0 res 1920x1080
-output HDMI-A-1 pos 1920 0 res 1680x1050
-output DP-6 mode "3840x2160@29.970Hz"
-output DP-7 mode "3840x2160@60Hz"
+# Hannover
+output 'HP Inc. HP Z27 CN40130G7D' pos -960 -2160 mode "3840x2160@60Hz"
+## Right
+output 'HP Inc. HP Z27 CN40130GCP' pos 2880 -2160 mode "3840x2160@29.970Hz"
 
 # Karlsruhe
 output "Eizo Nanao Corporation EV2457 0x01B28E35" mode "1920x1200@60Hz" pos 1920 0

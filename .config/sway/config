@@ -369,18 +369,19 @@ bar {
 output * bg /usr/share/backgrounds/joern/wallPaperRight.png fill
 
 ## Internal
-output eDP-1 pos 0 5000 mode "1920x1080@60Hz"
+# There is a wontfix issue in Xwayland with negative pos values. To workround this issue, the internal monitor is at 5000 5000 instead of 0 0
+output eDP-1 pos 5000 5000 mode "1920x1080@60Hz"
 
 # Home PC
 # Center
-output 'Samsung Electric Company S24F350 H4ZK601999' bg /usr/share/backgrounds/joern/wallPaperLeft.png fill pos 0 5000 res 1920x1080@60Hz
+output 'Samsung Electric Company S24F350 H4ZK601999' bg /usr/share/backgrounds/joern/wallPaperLeft.png fill pos 5000 5000 res 1920x1080@60Hz
 # Right
-output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 1920 5000 res 1680x1050@60Hz
+output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 6920 5000 res 1680x1050@60Hz
 
 # Hannover
-output 'HP Inc. HP Z27 CN40130G7D' pos -960 2840 mode "3840x2160@30Hz"
+output 'HP Inc. HP Z27 CN40130G7D' pos 4040 2840 mode "3840x2160@30Hz"
 ## Right
-output 'HP Inc. HP Z27 CN40130GCP' pos 2880 2840 mode "3840x2160@30Hz"
+output 'HP Inc. HP Z27 CN40130GCP' pos 7880 2840 mode "3840x2160@30Hz"
 
 # Karlsruhe
-output "Eizo Nanao Corporation EV2457 0x01B28E35" mode "1920x1200@60Hz" pos 1920 5000
+output "Eizo Nanao Corporation EV2457 0x01B28E35" mode "1920x1200@60Hz" pos 6920 5000

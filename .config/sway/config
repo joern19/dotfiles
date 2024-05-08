@@ -139,10 +139,10 @@ for_window [title="^(Android Emulator).*"] floating enable
 #
 
 # move whole workspace
-bindsym $mod+Ctrl+j move workspace to output left
-bindsym $mod+Ctrl+k move workspace to output down
-bindsym $mod+Ctrl+l move workspace to output up
-bindsym $mod+Ctrl+odiaeresis move workspace to output right
+bindsym $mod+Ctrl+$left move workspace to output left
+bindsym $mod+Ctrl+$down move workspace to output down
+bindsym $mod+Ctrl+$up move workspace to output up
+bindsym $mod+Ctrl+$right move workspace to output right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Ctrl+Left move workspace to output left

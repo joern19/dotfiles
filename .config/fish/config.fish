@@ -10,6 +10,8 @@ if status is-login
   end
 end
 
+set -x KUBECONFIG (string join ':' ~/.kube/*.config)
+
 set fish_greeting
 fish_vi_key_bindings
 

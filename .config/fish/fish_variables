@@ -1,8 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-# COMMON
+SETUVAR --export DEV_HOSTNAME:joern\x2ddev\x2dcvg\x2evier\x2eservices
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GTK_USE_PORTAL:1
+SETUVAR --export LIVE_UPLOAD_LOCAL_ROOT:/home/joern/PP/cvg/
+SETUVAR --export LIVE_UPLOAD_REMOTE:dev
+SETUVAR --export LIVE_UPLOAD_REMOTE_ROOT:/home/vieradm/projects/cvg/
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_fcd:cd\x20\x28find\x20\x2e\x20\x2dtype\x20d\x20\x7c\x20fzf\x29
 SETUVAR _fish_abbr_sl:ls\x20\x2dlah
@@ -40,8 +43,3 @@ SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_prompt_pwd_dir_length:0
 SETUVAR fish_user_paths:\x7e/go/bin\x3a\x7e/\x2elocal/bin/
-# WORK
-SETUVAR --export DEV_HOSTNAME:joern\x2ddev\x2dcvg\x2evier\x2eservices
-SETUVAR --export LIVE_UPLOAD_LOCAL_ROOT:/home/joern/PP/cvg/
-SETUVAR --export LIVE_UPLOAD_REMOTE_ROOT:/home/vieradm/projects/cvg/
-SETUVAR --export LIVE_UPLOAD_REMOTE:dev

@@ -1,5 +1,5 @@
-
 include /etc/sway/config.d/*
+include "conditional/$USAGE_CONTEXT"
 
 input "type:keyboard" {
   xkb_variant nodeadkeys
@@ -378,10 +378,15 @@ output 'Samsung Electric Company S24F350 H4ZK601999' bg /usr/share/backgrounds/j
 # Right
 output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 6920 5000 res 1680x1050@60Hz
 
-# Hannover
+# Hannover Loft
 output 'HP Inc. HP Z27 CN40130G7D' pos 4040 2840 mode "3840x2160@30Hz"
 ## Right
 output 'HP Inc. HP Z27 CN40130GCP' pos 7880 2840 mode "3840x2160@30Hz"
+
+# Hannover HQ 1
+output 'HP Inc. HP S270n 6CM8270685' pos 4040 2840 mode "3840x2160@30Hz"
+## Right
+output 'HP Inc. HP S270n 6CM8300YZ2' pos 7880 2840 mode "3840x2160@30Hz"
 
 # Karlsruhe
 output "Eizo Nanao Corporation EV2457 0x01B28E35" mode "1920x1200@60Hz" pos 6920 5000

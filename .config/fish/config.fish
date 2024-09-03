@@ -1,3 +1,9 @@
+if test (cat /etc/hostname) = "NB-00307"
+  set -x USAGE_CONTEXT work
+else
+  set -x USAGE_CONTEXT personal
+end
+
 # Start X at login
 if status is-login
   if test -z "$DISPLAY" -a "$XDG_VTNR" = 1

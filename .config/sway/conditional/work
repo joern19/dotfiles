@@ -1,0 +1,5 @@
+
+exec swaynag -t warning -m 'Do you want to record a work day?' \
+  -z 'HOME' 'python3 ~/PP/Github/randomStuff/workTracker/recordWorkStart.py home' \
+  -z 'HANNOVER' 'python3 ~/PP/Github/randomStuff/workTracker/recordWorkStart.py hannover' \
+  -z 'KARLSRUHE' 'python3 ~/PP/Github/randomStuff/workTracker/recordWorkStart.py karlsruhe'

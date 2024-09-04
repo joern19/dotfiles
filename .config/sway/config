@@ -39,6 +39,8 @@ for_window [app_id="^emojis$"] floating enable, border pixel 5, resize set width
 bindsym $mod+p exec alacritty --class 'passwords' --command fish -c "cd \$PASSWORD_STORE_DIR && pass -c (find . -type f -name '*.gpg' | string sub -s 3 -e -4 | fzf)"
 for_window [app_id="^passwords$"] floating enable, border pixel 5, resize set width 25 ppt height 20 ppt
 
+bindsym $mod+shift+x exec swaylock
+
 # gaps
 gaps inner 2
 gaps outer -2

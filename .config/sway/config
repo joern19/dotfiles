@@ -277,23 +277,20 @@ mode "launch" {
 bindsym $mod+a mode "launch"
 
 
+bindsym XF86MonBrightnessUp exec brightnessctl -c backlight --exponent=5 set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl -c backlight --exponent=5 set 10%-
 mode "screen" {
-
-	bindsym 1 exec brightness 0.1
-	bindsym 2 exec brightness 0.2
-	bindsym 3 exec brightness 0.3
-	bindsym 4 exec brightness 0.4
-	bindsym 5 exec brightness 0.5
-	bindsym 6 exec brightness 0.6
-	bindsym 7 exec brightness 0.7
-	bindsym 8 exec brightness 0.8
-	bindsym 9 exec brightness 0.9
-	bindsym 0 exec brightness 1
-	# bindsym 1 exec xrandr --output HDMI-0 --output DVI-D-0 --output DP-1 --brightness 1
+	bindsym 1 exec brightnessctl -c backlight set 1%
+	bindsym 2 exec brightnessctl -c backlight set 4%
+	bindsym 3 exec brightnessctl -c backlight set 6%
+	bindsym 4 exec brightnessctl -c backlight set 8%
+	bindsym 5 exec brightnessctl -c backlight set 10%
+	bindsym 6 exec brightnessctl -c backlight set 20%
+	bindsym 7 exec brightnessctl -c backlight set 40%
+	bindsym 8 exec brightnessctl -c backlight set 60%
+	bindsym 9 exec brightnessctl -c backlight set 80%
+	bindsym 0 exec brightnessctl -c backlight set 100%
 	
-	bindsym b exec xrandr --output HDMI-0 --output DVI-D-0 --output DP-1 --brightness 0.6
-	bindsym d exec xrandr --output HDMI-0 --output DVI-D-0 --output DP-1 --brightness 0.3
-
 	# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"

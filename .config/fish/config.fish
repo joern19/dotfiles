@@ -12,6 +12,7 @@ if status is-login
     set -x QT_QPA_PLATFORM wayland
     set -x XDG_CURRENT_DESKTOP sway
     set -x XDG_SESSION_DESKTOP sway
+    set -x PASSWORD_STORE_DIR $HOME/backup/passwords/.password-store
     exec sway &>> /tmp/sway.log || bash
   end
 end
@@ -63,3 +64,4 @@ function extract
   end
 end
 
+kubectl completion fish | source

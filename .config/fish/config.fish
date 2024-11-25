@@ -1,5 +1,6 @@
 if test (cat /etc/hostname) = "NB-00307"
   set -x USAGE_CONTEXT work
+  set -x PASSWORD_STORE_DIR ~/.password-store/
 else
   set -x USAGE_CONTEXT personal
 end

@@ -374,8 +374,8 @@ output eDP-1 pos 5000 5000 mode "1920x1080@60Hz"
 # Home PC
 # Center
 output 'Samsung Electric Company S24F350 H4ZK601999' bg /usr/share/backgrounds/joern/wallPaperLeft.png fill pos 5000 5000 res 1920x1080@60Hz
-# Right
-output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 6920 5000 res 1680x1050@60Hz
+# Left
+output 'LG Electronics W2242 0x00026E2A' bg /usr/share/backgrounds/joern/wallPaperCenter.png fill pos 3320 5000 res 1680x1050@60Hz
 
 # Hannover Loft
 output 'HP Inc. HP Z27 CN40130G7D' pos 4040 2840 mode "3840x2160@30Hz"

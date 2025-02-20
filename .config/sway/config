@@ -293,6 +293,9 @@ mode "screen" {
 	bindsym 9 exec brightnessctl -c backlight set 80%
 	bindsym 0 exec brightnessctl -c backlight set 100%
 	
+	# toggle laptop
+	bindsym t output eDP-1 toggle
+
 	# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -323,7 +326,6 @@ mode "zigbee" {
         bindsym $mod+m mode "default"
 }
 bindsym $mod+z mode "zigbee"
-
 
 # green: #14A76C
 # orange: #FF652F

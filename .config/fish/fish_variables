@@ -7,7 +7,7 @@ SETUVAR --export LIVE_UPLOAD_LOCAL_ROOT:/home/joern/PP/cvg/
 SETUVAR --export LIVE_UPLOAD_REMOTE:dev
 SETUVAR --export LIVE_UPLOAD_REMOTE_ROOT:/home/vieradm/projects/cvg/
 SETUVAR --export OLLAMA_MODELS:\x7e/Downloadable/ollama/
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_fcd:cd\x20\x28find\x20\x2e\x20\x2dtype\x20d\x20\x7c\x20fzf\x29
 SETUVAR _fish_abbr_sl:ls\x20\x2dlah
 SETUVAR _fish_abbr_vim:nvim

@@ -1,4 +1,6 @@
 return {
+  -- Just use pacman..
+  { "williamboman/mason.nvim", enabled = false },
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -12,6 +14,21 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function ()
+      vim.g.rustfmt_autosave = 1
+    end
+  },
+  {
+    "mrcjkb/rustaceanvim",
+    version = '^5', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  {
+    "mfussenegger/nvim-dap",
+  }
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

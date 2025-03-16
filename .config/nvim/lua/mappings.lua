@@ -22,3 +22,5 @@ map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugge
 -- rustaceanvim
 map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
 
+map("n", "<Leader><Leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>", { desc = "Rename" })
+map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")

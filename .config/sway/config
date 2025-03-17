@@ -371,7 +371,7 @@ output * bg /usr/share/backgrounds/joern/wallPaperRight.png fill
 
 ## Internal
 # There is a wontfix issue in Xwayland with negative pos values. To workround this issue, the internal monitor is at 5000 5000 instead of 0 0
-output eDP-1 pos 5000 5000 mode "1920x1080@60Hz"
+output eDP-1 pos 3080 5000 mode "1920x1080@60Hz"
 
 # Home PC
 # Center
@@ -391,3 +391,4 @@ output 'HP Inc. HP S270n 6CM8300YZ2' pos 7880 2840 mode "3840x2160@30Hz"
 
 # Karlsruhe
 output "Eizo Nanao Corporation EV2457 0x01B28E35" mode "1920x1200@60Hz" pos 6920 5000
+

@@ -19,6 +19,7 @@ if status is-login
 end
 
 set -x KUBECONFIG (string join ':' ~/.kube/*.config)
+set -x DOCKER_HOST unix:///run/user/(id -u)/podman/podman.sock
 
 set fish_greeting
 fish_vi_key_bindings
@@ -65,4 +66,3 @@ function extract
   end
 end
 
-kubectl completion fish | source

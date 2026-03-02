@@ -9,3 +9,5 @@
 	autoSetupRemote = true
 [pull]
 	rebase = true
+[diff]
+	tool = meld

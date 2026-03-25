@@ -4,9 +4,6 @@ SETUVAR --export DEV_HOSTNAME:joern\x2ddev\x2dcvg\x2evier\x2eservices
 SETUVAR --export DOCKER_HOST:unix\x3a///run/user/1000/podman/podman\x2esock
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GTK_USE_PORTAL:1
-SETUVAR --export LIVE_UPLOAD_LOCAL_ROOT:/home/joern/PP/cvg/
-SETUVAR --export LIVE_UPLOAD_REMOTE:dev
-SETUVAR --export LIVE_UPLOAD_REMOTE_ROOT:/home/vieradm/projects/cvg/
 SETUVAR --export OLLAMA_MODELS:\x7e/Downloadable/ollama/
 SETUVAR __fish_initialized:4300
 SETUVAR _fish_abbr_fcd:cd\x20\x28find\x20\x2e\x20\x2dtype\x20d\x20\x7c\x20fzf\x29

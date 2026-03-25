@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export DEV_HOSTNAME:joern\x2ddev\x2dcvg\x2evier\x2eservices
+SETUVAR --export DOCKER_HOST:unix\x3a///run/user/1000/podman/podman\x2esock
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GTK_USE_PORTAL:1
 SETUVAR --export LIVE_UPLOAD_LOCAL_ROOT:/home/joern/PP/cvg/

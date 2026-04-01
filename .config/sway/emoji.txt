@@ -6,3 +6,4 @@ oe: ö
 ue: ü
 ae: ä
 mfg: Mit freundlichen Grüßen\nJörn
+opinion: https://youtu.be/CXArovLJ60A

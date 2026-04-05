@@ -112,6 +112,8 @@ for_window [app_id="^launcher$"] floating enable, border pixel 5, resize set wid
 
 for_window [title="^(Android Emulator).*"] floating enable
 
+for_window [shell="xwayland"] border pixel 1, hide_edge_borders none, client.focused  #00ff00 #00ff00 #00ff00 #00ff00
+
 #
 # Moving around:
 #

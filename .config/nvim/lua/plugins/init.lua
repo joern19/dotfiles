@@ -7,6 +7,17 @@ return {
     opts = require "configs.conform",
   },
 
+  -- latext shit
+  {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+      vim.g.vimtex_view_method = "zathura"
+      vim.g.maplocalleader = " "
+    end
+  },
+
+
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
@@ -63,15 +74,14 @@ return {
     config = function()
       require("dapui").setup()
     end,
-  }
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "vimdoc", "lua", "luadoc", "html", "css", "printf", "helm"
+  		},
+  	},
+  },
 }

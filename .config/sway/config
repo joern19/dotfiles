@@ -370,6 +370,7 @@ bar {
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 output * bg /usr/share/backgrounds/joern/wallPaperRight.png fill
+output * adaptive_sync off
 
 ## Internal
 # There is a wontfix issue in Xwayland with negative pos values. To workround this issue, the internal monitor is at 5000 5000 instead of 0 0

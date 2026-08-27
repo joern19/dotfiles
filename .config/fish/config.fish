@@ -20,6 +20,8 @@ end
 
 set -x KUBECONFIG (string join ':' ~/.kube/*.config)
 set -x DOCKER_HOST unix:///run/user/(id -u)/podman/podman.sock
+set -x OLLAMA_MODELS $HOME/Downloadable/ollama/
+
 
 set fish_greeting
 fish_vi_key_bindings

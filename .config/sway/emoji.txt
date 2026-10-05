@@ -6,4 +6,5 @@ oe: ö
 ue: ü
 ae: ä
 mfg: Mit freundlichen Grüßen\nJörn
+MfG: Mit freundlichen Grüßen\nJörn Hirschfeld
 opinion: https://youtu.be/CXArovLJ60A
